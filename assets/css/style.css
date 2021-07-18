@@ -5,11 +5,47 @@
 /* sm */
 /* xs */
 /* xx */
-.header {
+.css, .html, .header {
   position: relative;
   overflow: hidden;
   max-width: 100%;
   min-height: 100vh;
+}
+
+.css__title, .html__title {
+  margin: 0 0 0.4em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 300;
+}
+.css__title b, .html__title b {
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.css__title i, .html__title i {
+  font-size: 0.8em;
+  font-style: normal;
+}
+
+.css__logo img, .html__logo img {
+  width: 200px;
+}
+
+.css__col-2, .html__col-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+}
+
+.css__description, .html__description {
+  margin: -0.3em 0 0 0;
+  font-size: 2rem;
+  line-height: 1.5em;
 }
 
 * {
@@ -26,6 +62,25 @@ html {
 
 h1 {
   font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
 }
 
 .navbar {
@@ -136,4 +191,123 @@ h1 {
   position: relative;
   font-size: 10rem;
   font-weight: 900;
+}
+
+.html {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #034052;
+  background-image: url(../img/html5.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.html__overlay {
+  background: -o-linear-gradient(315deg, rgba(53, 123, 143, 0.75) 0%, rgba(2, 37, 48, 0.9) 30%, rgba(0, 6, 8, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(53, 123, 143, 0.75) 0%, rgba(2, 37, 48, 0.9) 30%, rgba(0, 6, 8, 0.9) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.html__content {
+  position: relative;
+}
+.html__subtitle {
+  position: relative;
+  margin: 0 0 3em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.25em;
+}
+.html__subtitle span {
+  white-space: nowrap;
+}
+.html__subtitle b {
+  font-weight: 700;
+}
+.html__subtitle::after {
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  width: 20%;
+  height: 3px;
+  content: "";
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ffffff;
+}
+.css {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffc080;
+  background-image: url(../img/css3.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.css__overlay {
+  background: -o-linear-gradient(315deg, rgba(255, 192, 128, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%);
+  background: linear-gradient(135deg, rgba(255, 192, 128, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.css__content {
+  position: relative;
+  z-index: 1;
+  color: #034052;
+}
+.css__subtitle {
+  position: relative;
+  margin: 0 0 3em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.25em;
+}
+.css__subtitle span {
+  white-space: nowrap;
+}
+.css__subtitle b {
+  font-weight: 700;
+}
+.css__subtitle::after {
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  width: 20%;
+  height: 3px;
+  content: "";
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #034052;
 }
