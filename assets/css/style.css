@@ -471,3 +471,28 @@ a {
 .footer__links:hover {
   color: #ffffff;
 }
+@media (min-width: 1600px) {
+  body .not-responsive {
+    display: none;
+  }
+}
+@media (max-width: 1599px) {
+  body > * {
+    display: none !important;
+  }
+  body .not-responsive {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: #034052;
+    font-size: 4rem;
+  }
+}
