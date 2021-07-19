@@ -14,9 +14,10 @@
     font-size: 2rem;
 
     gap: $gap;
-    // @include unlist;
     list-style: none;
     padding: 0;
+    margin-top: 0;
+    // @include unlist;
   }
 
   &__links {
